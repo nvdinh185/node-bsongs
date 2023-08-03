@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdminCP | VinaEnter Edu</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="../../../templates/admin/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="../../../templates/admin/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="../../../templates/admin/assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">VinaEnter Edu</a>
+            </div>
+            <div style="color: white;padding: 15px 50px 5px 50px;float: right;font-size: 16px;"> Xin chào, <b>Admin</b>
+                &nbsp; <a href="" class="btn btn-danger square-btn-adjust">Đăng xuất</a> </div>
+        </nav>
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li class="text-center">
+                        <img src="../../../templates/admin/assets/img/find_user.png"
+                            class="user-image img-responsive" />
+                    </li>
+                    <li>
+                        <a id="index" href=""><i class="fa fa-dashboard fa-3x"></i> Trang chủ</a>
+                    </li>
+                    <li>
+                        <a id="category" href=""><i class="fa fa-list fa-3x"></i> Quản lý danh mục</a>
+                    </li>
+                    <li>
+                        <a id="song" href=""><i class="fa fa-music fa-3x"></i> Quản lý bài hát</a>
+                    </li>
+                    <li>
+                        <a id="user" href=""><i class="fa fa-user fa-3x"></i> Quản lý người dùng</a>
+                    </li>
+                    <li>
+                        <a id="contact" href=""><i class="fa fa-envelope fa-3x"></i> Quản lý liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Quản lý bài hát</h2>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Advanced Tables -->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <a href="" class="btn btn-success btn-md">Thêm</a>
+                                        </div>
+                                        <div class="col-sm-6" style="text-align: right;">
+                                            <form method="post" action="">
+                                                <input type="submit" name="search" value="Tìm kiếm"
+                                                    class="btn btn-warning btn-sm" style="float:right" />
+                                                <input type="search" class="form-control input-sm"
+                                                    placeholder="Nhập tên bài hát" style="float:right; width: 300px;" />
+                                                <div style="clear:both"></div>
+                                            </form><br />
+                                        </div>
+                                    </div>
+
+                                    <table class="table table-striped table-bordered table-hover"
+                                        id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Tên bài hát</th>
+                                                <th>Danh mục</th>
+                                                <th>Lượt đọc</th>
+                                                <th>Hình ảnh</th>
+                                                <th width="160px">Chức năng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="center">Đổi thay</td>
+                                                <td class="center">Nhạc Pop</td>
+                                                <td class="center">2</td>
+                                                <td class="center">
+                                                    <img width="200px" height="200px"
+                                                        src="../../../templates/admin/assets/img/doi-thay.jpg"
+                                                        alt="Đổi thay" />
+                                                </td>
+                                                <td class="center">
+                                                    <a href="" title="" class="btn btn-primary"><i
+                                                            class="fa fa-edit "></i> Sửa</a>
+                                                    <a href="" title="" class="btn btn-danger"><i
+                                                            class="fa fa-pencil"></i> Xóa</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="center">Only Love</td>
+                                                <td class="center">Nhạc Ngoại</td>
+                                                <td class="center">5</td>
+                                                <td class="center">
+                                                    <img width="200px" height="200px"
+                                                        src="../../../templates/admin/assets/img/only-love.jpg"
+                                                        alt="Only Love" />
+                                                </td>
+                                                <td class="center">
+                                                    <a href="" title="" class="btn btn-primary"><i
+                                                            class="fa fa-edit "></i> Sửa</a>
+                                                    <a href="" title="" class="btn btn-danger"><i
+                                                            class="fa fa-pencil"></i> Xóa</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="center">Nơi ấy con tìm về</td>
+                                                <td class="center">Nhạc Pop</td>
+                                                <td class="center">3</td>
+                                                <td class="center">
+                                                    <img width="200px" height="200px"
+                                                        src="../../../templates/admin/assets/img/noi-ay-con-tim-ve.jpg"
+                                                        alt="Nơi ấy con tìm về" />
+                                                </td>
+                                                <td class="center">
+                                                    <a href="" title="" class="btn btn-primary"><i
+                                                            class="fa fa-edit "></i> Sửa</a>
+                                                    <a href="" title="" class="btn btn-danger"><i
+                                                            class="fa fa-pencil"></i> Xóa</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="dataTables_info" id="dataTables-example_info"
+                                                style="margin-top:27px">Hiển thị từ 1 đến 5 của 24 truyện</div>
+                                        </div>
+                                        <div class="col-sm-6" style="text-align: right;">
+                                            <div class="dataTables_paginate paging_simple_numbers"
+                                                id="dataTables-example_paginate">
+                                                <ul class="pagination">
+                                                    <li class="paginate_button previous disabled"
+                                                        aria-controls="dataTables-example" tabindex="0"
+                                                        id="dataTables-example_previous"><a href="#">Trang trước</a>
+                                                    </li>
+                                                    <li class="paginate_button active"
+                                                        aria-controls="dataTables-example" tabindex="0"><a href="">1</a>
+                                                    </li>
+                                                    <li class="paginate_button" aria-controls="dataTables-example"
+                                                        tabindex="0"><a href="">2</a></li>
+                                                    <li class="paginate_button" aria-controls="dataTables-example"
+                                                        tabindex="0"><a href="">3</a></li>
+                                                    <li class="paginate_button" aria-controls="dataTables-example"
+                                                        tabindex="0"><a href="">4</a></li>
+                                                    <li class="paginate_button" aria-controls="dataTables-example"
+                                                        tabindex="0"><a href="">5</a></li>
+                                                    <li class="paginate_button next" aria-controls="dataTables-example"
+                                                        tabindex="0" id="dataTables-example_next"><a href="#">Trang
+                                                            tiếp</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End Advanced Tables -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("song").classList.add('active-menu');
+        </script>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY -->
+    <script src="../../../templates/admin/assets/js/jquery-3.2.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../../../templates/admin/assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="../../../templates/admin/assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="../../../templates/admin/assets/js/custom.js"></script>
+</body>
+
+</html>
